@@ -5,8 +5,8 @@ public:
       long int a=x, b=0;
         while(x!=0)
         {
-            int rem=x%10;
-            b=(b*10)+rem;
+             int rem=x%10;
+             b=(b*10)+rem;
             x/=10;
         }
         return (b == a) ? true : false;
