@@ -26,10 +26,8 @@ class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
         int rows = matrix.size();
-        if (rows == 0) return false;
-        
         int cols = matrix[0].size();
-        if (cols == 0) return false;
+        if (rows == 0 || cols==0) return false;
         
         for (int i = 0; i < rows; i++) {
             if (target <= matrix[i][cols - 1]) {
