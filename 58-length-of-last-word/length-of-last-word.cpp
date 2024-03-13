@@ -6,7 +6,7 @@ public:
         bool start=false;
         for(int i=size-1;i>=0;i--)
         {
-            if(s[i]!=' ') start=true;
+            if(s[i]!=' ' && !start) start=true;
             if(start)
             {
                 if(s[i]==' ')return c;
