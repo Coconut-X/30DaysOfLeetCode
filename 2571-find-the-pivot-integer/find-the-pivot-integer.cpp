@@ -1,7 +1,7 @@
 class Solution {
 public:
     int pivotInteger(int n) {
-       
+       if(n<1 ||  n>1000) return -1;
        int pre=0,suff=0;
        for(int i=1;i<=n;i++)
        {
